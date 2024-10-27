@@ -6,7 +6,6 @@ plugins {
     alias(libs.plugins.ksp)
     alias(libs.plugins.compose.compiler)
 
-    alias(libs.plugins.serialization)
 }
 
 android {
@@ -69,9 +68,6 @@ dependencies {
     implementation(libs.ktor.client.content.negotiation)
     implementation(libs.ktor.client.logging)
     implementation(libs.ktor.serialization.kotlinx.json)
-
-    //Serialization
-    implementation(libs.kotlinx.serialization.json)
 
 
     //hilt
